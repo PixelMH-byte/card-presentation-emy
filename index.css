@@ -29,6 +29,7 @@ body, html {
     align-items: center;
     padding: 20px;
     box-sizing: border-box;
+    margin-top:-70px;
 }
 
 
@@ -105,12 +106,13 @@ body, html {
 /* Imagen de perfil */
 .card-front .img {
     width: 120px;
-    aspect-ratio: 1 / 1;
+    height: 120px;
     background: url('./img/emy-profile.jpg') center center / cover no-repeat;
     border-radius: 50%;
     border: 3px solid #df6c39;
     margin-bottom: 10px;
-    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    flex-shrink: 0; /* Evita que se deforme en layouts flex */
 }
 
 
